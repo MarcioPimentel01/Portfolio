@@ -1,0 +1,62 @@
+head {
+
+}
+
+body {
+
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    padding-left: 1%;
+    background-color: #6791b6;
+    
+}
+
+header h1 {
+  font-size: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(255, 255, 255);
+  border: 4px;
+}
+
+aside {
+    display: flex;
+    background-color: aqua;
+    
+}
+
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #294864;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: right;
+    font-weight: bolder;
+
+}
+
+.about-me {
+    display: flex;
+}
+
+
+
+footer{
+    background-color: #294864;
+    color: white;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
