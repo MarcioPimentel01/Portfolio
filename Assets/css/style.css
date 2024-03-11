@@ -79,12 +79,17 @@ section div {
 }
 
 table {
-	display: block;
+	display: flex;
+    flex-direction: column;
 }
+
 table th {
-    width: fit-content;
+
 }
 
 .gif {
+    display: flex;
+    flex-direction: column;
 	width: 340px;
+    
 }
