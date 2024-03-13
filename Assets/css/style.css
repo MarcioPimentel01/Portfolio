@@ -4,28 +4,30 @@ header {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
+	background-image: url(../Images/hero-image.png);
 	background-color: rgb(103, 145, 182);
+	background-size: cover;
 	color: white;
 	padding: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 		
 }
 
-section nav {
+.nav nav{
 	display: flex;
 	justify-content: space-around;
 	background-color: rgb(41, 72, 100);
 }
 
-section nav a {
+.nav nav a {
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 	font-weight: bolder;
 	color: white;
 	font-size: 20px;	text-decoration: none
 }
 
-section nav a:hover {
+.nav nav a:hover {
 	transition: color 0.3 easy;
 	color: rgb(189, 184, 184);
 }
@@ -39,9 +41,10 @@ section nav a:hover {
 
 .about-me figure {
 	align-self: center;
+	color: white;
 }
 
-aside div {
+.about-me div {
     border-left: solid;
     border-color: rgb(41, 72, 100);
     padding-left: 35px;
@@ -49,14 +52,6 @@ aside div {
     margin-bottom: 15px;
 }
 
-section div {
-    border-left: solid;
-    border-color: rgb(41, 72, 100);
-    padding-left: 35px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-
-}
 
 .work {
 	display: flex;
@@ -66,7 +61,18 @@ section div {
 
 .work figure {
 	align-self: center;
+	color: white;
+
 }
+
+.work div {
+    border-left: solid;
+    border-color: rgb(41, 72, 100);
+    padding-left: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 
 .projects {
 	display: flex;
@@ -76,20 +82,45 @@ section div {
 
 .projects figure {
 	align-self: center;
+	color: white;
 }
 
-table {
+
+.projects div {
+	border-left: solid;
+    border-color: rgb(41, 72, 100);
+    padding-left: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.contacts {
 	display: flex;
-    flex-direction: column;
 }
 
-table th {
-
+.contacts figure {
+	align-items: center;
+	color: white;
 }
 
-.gif {
-    display: flex;
-    flex-direction: column;
-	width: 340px;
-    
+.contacts div {
+	display: flex;
+	flex-direction: row;	
+	flex-wrap: nowrap;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: x-large;
+	border-left: solid;
+    border-color: rgb(41, 72, 100);
+    padding-left: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+footer {
+	display: flex;
+	justify-content: Center;
+	background-color: rgb(41, 72, 100);
+	color: white;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
