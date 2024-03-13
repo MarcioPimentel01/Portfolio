@@ -1,20 +1,20 @@
-@charset "utf-8";
 /* CSS Document */
+
+/* Even though I know that I do not need to display as flex because it is a default behavior, I do it for reminder purposes. */
+/* The reason for an image and a color for the background is due to the fact that when the screen is 1700px and below, the image disappears, and the background color takes its place. */
 header {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
 	justify-content: space-between;
 	background-image: url(../Images/hero-image.png);
 	background-color: rgb(103, 145, 182);
 	background-size: cover;
 	color: white;
-	padding: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-		
+	padding: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;	
 }
 
-.nav nav{
+.nav nav {
 	display: flex;
 	justify-content: space-around;
 	background-color: rgb(41, 72, 100);
@@ -24,19 +24,20 @@ header {
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 	font-weight: bolder;
 	color: white;
-	font-size: 20px;	text-decoration: none
+	font-size: large;	
+	text-decoration: none;
 }
 
+/* Just a simple use of Pseudo class  */
 .nav nav a:hover {
-	transition: color 0.3 easy;
+	transition: color 0.3s ease;
 	color: rgb(189, 184, 184);
 }
-
 
 .about-me {
 	display: flex;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
-	font-size: 14px;
+	font-size: medium;
 }
 
 .about-me figure {
@@ -56,7 +57,7 @@ header {
 .work {
 	display: flex;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
-	font-size: 14px;
+	font-size: medium;
 }
 
 .work figure {
@@ -77,7 +78,7 @@ header {
 .projects {
 	display: flex;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
-	font-size: 14px;
+	font-size: medium;
 }
 
 .projects figure {
@@ -104,9 +105,6 @@ header {
 }
 
 .contacts div {
-	display: flex;
-	flex-direction: row;	
-	flex-wrap: nowrap;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-size: x-large;
 	border-left: solid;
@@ -119,8 +117,31 @@ header {
 
 footer {
 	display: flex;
-	justify-content: Center;
+	justify-content: center;
 	background-color: rgb(41, 72, 100);
 	color: white;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Media Queries for responsive web page */
+
+/* The first one is to remove the background when >= 1700px */
+@media (max-width: 1700px) { 
+	header {
+		background-image: none;
+	}
+}
+
+/* The media query below has the intent of making all <img> elements smaller. */
+@media (max-width: 1400px) {
+	.about-me figure, .work figure, .projects figure, .contacts figure {
+		transform: scale(0.6);
+	}
+}
+
+/* The media query below stacks all the content in a column when >= 1280px with the exception of the Nav Bar. */
+@media (max-width: 1280px) {
+	header, .about-me, .work, .projects, .contacts {
+		display: block;
+	}
 }
